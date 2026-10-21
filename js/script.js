@@ -6,3 +6,6 @@ document.querySelectorAll('.filters button').forEach(btn => {
     });
   });
 });
+document.getElementById('themeBtn').addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+});

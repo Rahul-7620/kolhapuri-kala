@@ -7,3 +7,6 @@ section { padding: 2rem; max-width: 1000px; margin: auto; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
 .card { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,.15); }
 .filters button { padding: .4rem 1rem; margin: 0 .3rem 1rem 0; cursor: pointer; }
+body.dark { background: #1e1410; color: #f4e4cf; }
+body.dark .card { background: #2e2019; }
+#themeBtn { margin-left: 1rem; padding: .3rem .7rem; cursor: pointer; border: none; border-radius: 6px; }
