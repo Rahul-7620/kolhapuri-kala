@@ -1,0 +1,6 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Georgia, serif; background: #fdf6ec; color: #3b2314; line-height: 1.6; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: #6b3e1e; color: #fff; }
+header a { color: #f4d9a6; text-decoration: none; margin-left: 1rem; }
+.hero { text-align: center; padding: 4rem 1rem; background: #c68642; color: #fff; }
+section { padding: 2rem; max-width: 1000px; margin: auto; }
