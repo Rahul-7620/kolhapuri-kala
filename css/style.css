@@ -10,3 +10,6 @@ section { padding: 2rem; max-width: 1000px; margin: auto; }
 body.dark { background: #1e1410; color: #f4e4cf; }
 body.dark .card { background: #2e2019; }
 #themeBtn { margin-left: 1rem; padding: .3rem .7rem; cursor: pointer; border: none; border-radius: 6px; }
+#enquiryForm input, #enquiryForm textarea { width: 100%; max-width: 400px; padding: .5rem; border: 1px solid #c68642; border-radius: 6px; font-family: inherit; }
+#enquiryForm button { padding: .5rem 1.2rem; background: #6b3e1e; color: #fff; border: none; border-radius: 6px; cursor: pointer; }
+#status { margin-top: .5rem; font-weight: bold; }
