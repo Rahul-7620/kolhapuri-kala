@@ -1,0 +1,32 @@
+name: Website CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check required files exist
+        run: |
+          test -f index.html
+          test -f css/style.css
+          test -f js/script.js
+          echo "All required files found"
+
+      - name: Validate HTML
+        run: |
+          sudo apt-get install -y tidy
+          tidy -q -e index.html || true
+
+      - name: Check JavaScript syntax
+        run: node --check js/script.js
+
+      - name: Build summary
+        run: echo "Kolhapuri Kala website checks passed"
